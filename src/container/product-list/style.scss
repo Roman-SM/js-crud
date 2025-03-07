@@ -1,0 +1,48 @@
+@use '../../lib/service.scss' as s;
+
+.cards {
+  
+  padding: s.space(4);
+  &__header {
+    font-size: s.space(7);
+    padding-bottom: s.space(10);
+    color: s.color('primary');
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: s.space(3);
+  }
+  &__list {
+      padding: s.space(4);
+      border: 1px solid s.color('light');
+      border-radius: s.space(2);
+      box-shadow: 2px 2px 5px 0px s.color('light');
+  }
+  &__title {
+      font-size: s.space(4);
+      font-weight: bold;
+      padding-bottom: s.space(3);
+  }
+  &__description {
+      font-size: 14px;
+      padding-bottom: s.space(4);
+  }
+  &__id {
+      padding-bottom: s.space(3);
+      color: s.color('dark-light');
+  }
+  &__bottom {
+      display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+  }
+  &__price {
+      font-size: s.space(4);
+      font-weight: bold;
+  }
+  &__edit {
+      font-size: 14px;
+      text-decoration: none;
+  }
+}
