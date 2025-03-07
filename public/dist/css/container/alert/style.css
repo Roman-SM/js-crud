@@ -1,0 +1,33 @@
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 16px;
+}
+.form__title {
+  font-size: 20;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+.form__content {
+  display: grid;
+  gap: 12px;
+}
+.form__button {
+  display: flex;
+  justify-content: center;
+  position: left;
+  border: solid 1px #ddd;
+  background-color: #0D6EFD;
+  border-radius: 5px;
+  height: 40px;
+  width: 250px;
+}
+.form__button-primary {
+  display: flex;
+  align-items: center;
+  color: #ddd;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

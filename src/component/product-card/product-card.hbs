@@ -1,0 +1,17 @@
+<div class="cards__container">
+  {{#if data.isEmpty}}
+  <marks>Список пустий</marks>
+  {{else}}
+    {{#each data.productlist}}
+      <div class="cards__list">
+        <h1 class="cards__title">{{name}}</h1>
+        <p class="cards__description">{{description}}</p>
+        <div class="cards__id">ID: {{id}}</div>
+        <div class="cards__bottom">
+          <div class="cards__price">{{price}}</div>
+          <a class="cards__edit" href="product-edit?id={{id}}">Редагувати</a>
+        </div>
+      </div>
+    {{/each}}
+  {{/if}}
+</div>

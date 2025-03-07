@@ -1,0 +1,78 @@
+@use '../../lib/service.scss' as s;
+
+.goods {
+  display: flex;
+  flex-direction: column;
+  padding: s.space(4);
+  &__header {
+    font-size: s.space(7);
+    padding-bottom: s.space(10);
+    color: s.color('primary');
+  }
+  &__container {
+    display: grid;
+    gap: 20px;
+    padding: s.space(4);
+    box-shadow: 0px 0px 10px 0px s.color('light');
+    border-radius: s.space(4);
+  }
+  &__title {
+    display: flex;
+      font-size: 20;
+      font-weight: bold ;
+      padding-bottom: s.space(1);
+      gap: s.space(4);
+  }
+  &__content {
+      display: grid;
+      gap: s.space(6);
+  }
+  &__labels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: s.space(4);
+  }
+  &__field {
+      display: flex;
+      flex-direction: column;
+      gap: s.space(2);
+  }
+  &__label {
+      font-size: 14px;
+  }
+  &__label-coment {
+      font-size: 12px;
+      color: s.color('dark-light');
+  }
+  &__input {
+      border: solid 1px s.color('light');
+      border-radius: 5px;
+      padding: s.space(2);
+  }
+  &__input-coment {
+      border: solid 1px s.color('light');
+      border-radius: 5px;
+      padding: s.space(4);
+  }
+  &__buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: s.space(4);
+  }
+  &__button-renewal {
+    color: s.color('white-light');
+    background-color: s.color('primary');
+    padding: s.space(2);
+    border-radius: s.space(1);
+  }
+  &__button-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: s.color('white-light');;
+    background-color: s.color('delete');
+    padding: s.space(2);
+    border-radius: s.space(1);
+    text-decoration: none;
+  }
+}

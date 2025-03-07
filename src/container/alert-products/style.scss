@@ -1,0 +1,40 @@
+@use '../../lib/service.scss' as s;
+
+.form {
+    padding: s.space(4);
+    &__container {
+        display: flex;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        padding: s.space(4);
+        box-shadow: 0px 0px 10px 0px s.color('light');
+        border-radius: s.space(4);
+    }
+    &__title {
+        font-size: 20;
+        font-weight: bold ;
+        padding-bottom: s.space(1);
+    }
+    &__content {
+        display: grid;
+        gap: s.space(3);
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        position: left;
+        border: solid 1px s.color('light');
+        background-color: #0D6EFD;
+        border-radius:  5px;
+        height: 40px;
+        width: 250px;
+    }
+    &__button-primary {
+        display: flex;
+        align-items: center;
+        color: s.color('white-light');
+        text-decoration: none;
+    }
+}
