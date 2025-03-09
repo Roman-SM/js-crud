@@ -1,0 +1,70 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/field/style.scss' as field;
+@use '../../component/button/style.scss' as button;
+
+main {
+    padding-top: s.space(6);
+}
+.cart {
+    padding: s.space(6);
+    box-shadow: 0px 0px 10px 0px s.color(light);
+    display: grid;
+    gap: s.space(5);
+    width: s.space(250);
+    &__list {
+        display: grid;
+        gap: s.space(5);
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-text {
+        font-size: s.space(4);
+        font-weight: 300;
+    }
+    &__item-price {
+        font-size: s.space(5);
+        font-weight: 500;
+    }
+    &__info {
+        display: flex;
+        flex-direction: row;
+        gap: s.space(5);
+    }
+    &__comment {
+        display: flex;
+        flex-direction: column;
+    }
+    &__description-label {
+        font-size: s.space(4);
+        font-weight: 300;
+        padding-bottom: s.space(3);
+    }
+    &__description-input {
+        padding: s.space(2) s.space(4);
+        border: 1px solid s.color(border);
+        border-radius: s.space(2);
+        height: s.space(17);
+    }
+    &__description-coment {
+        font-size: s.space(3);
+        font-weight: 300;
+        color: s.color(dark-light);
+    }
+    &__total {
+        font-size: s.space(5);
+    }
+}
+.heading {
+    &__title {
+        font-size: s.space(10);
+        color: s.color(primary);
+        padding-bottom: s.space(9);
+    }
+    &__info {
+        font-size: s.space(6);
+        color: s.color(primary);
+    }
+}

@@ -1,0 +1,21 @@
+@use '../../lib/service.scss' as s;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(3);
+  width: 100%;
+  &__label {
+    font-size: s.space(4);
+    font-weight: 300;
+  }
+  &__input {
+    padding: s.space(2) s.space(4);
+    border: 1px solid s.color(border);
+    border-radius: s.space(2);
+  }
+}
+.field--disabled {
+  position: absolute;
+  display: none;
+}

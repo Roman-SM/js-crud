@@ -1,0 +1,58 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-product/style.scss' as purchaseCard;
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/field/style.scss' as field;
+@use '../../component/button/style.scss' as button;
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(15);
+    max-width: min-content;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+    gap: s.space(5);
+    width: s.space(200);
+    height: s.space(112);
+    align-items: start;
+    justify-items: center;
+    padding-top: s.space(15);
+    &__image {
+        width: max-content;
+        height: 100%;
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: s.space(8);
+    }
+    &__title {
+        font-size: s.space(7);
+        font-weight: 500;
+        color: s.color(primary);
+    }
+    &__text {
+        font-size: s.space(4);
+        font-weight: 300;
+    }
+    &__botton {
+        padding: s.space(4) s.space(8);
+        text-decoration: none;
+        color: s.color(white-light);
+        background-color: s.color(primary);
+        border-radius: s.space(2);
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+        &:hover {
+        opacity: 0.7;
+    }
+    }
+}

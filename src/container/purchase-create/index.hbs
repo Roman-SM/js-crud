@@ -1,0 +1,50 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+<main class="main">
+  {{#with data}}
+    <form method="POST" action="/purchase-submit?id={{id}}" class="cart">
+      {{>heading title="Ваше замовлення"}}
+      <ul class="cart__list">
+        {{#each cart}}
+          <li class="cart__item">
+            <span class="cart__item-text">{{text}}</span>
+            <span class="cart__item-price">{{price}}</span>
+          </li>
+        {{/each}}
+      </ul>
+      {{>heading info="Оформлення замовлення"}}
+      <div class="cart__info">
+        {{>field label="Прізвище" name="firstname"}}
+        {{>field label="Ім'я" name="lastname"}}
+      </div>
+      <div class="cart__info">
+        {{>field label="Мобільний телефон" name="phone"}}
+        {{>field label="Електронна пошта" name="email"}}
+      </div>
+      <div class="cart__comment">
+        <label for="comment" class="cart__description-label">Коментар</label>
+        <input name="comment" class="cart__description-input">
+        <label for="comment" class="cart__description-coment">Коментар буде передано кур’єру</label>
+      </div>
+      <div class="cart__info">
+        {{>field label="Списати бонуси" name="bonus"}}
+        {{>field label="Промо-код" name="promocode"}}
+      </div>
+        {{>field value=totalPrice name="totalPrice" disabled=true}}
+        {{>field value=productPrice name="productPrice" disabled=true}}
+        {{>field value=deliveryPrice name="deliveryPrice" disabled=true}}
+        {{>field value=amount name="amount" disabled=true}}
+      <strong class="cart__total">
+        Всього: {{totalPrice}} ₴ (+ {{bonus}} ₴ на бонусний рахунок) 
+      </strong>
+      {{>button text="Оформити замовлення"}}
+    </form>
+  {{/with}}
+</main>
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}

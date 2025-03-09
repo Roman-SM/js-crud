@@ -1,0 +1,58 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/button/style.scss' as button;
+
+.purchase-card {
+  display: flex;
+  flex-direction: column;
+  padding: s.space(4);
+  gap: s.space(4);
+  border: 1px solid s.color(border);
+  border-radius: s.space(3);
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: s.space(5);
+  }
+  &__image {
+    gap: s.space(4)
+  }
+  &__title{
+    font-size: s.space(5);
+    font-weight: 500;
+  }
+  &__description {
+    font-size: s.space(4);
+    font-weight: 300;
+  }
+  &__category{
+    padding: s.space(2) s.space(4);
+    border-radius: s.space(20);
+    font-size: s.space(4);
+    border: 1px solid transparent;
+    width: max-content;
+  }
+  &__category--1 {
+    border-color: blue;
+    color: blue;
+  }
+  &__category--2 {
+    border-color: green;
+    color: green;
+  }
+  &__botton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: s.color(primary);
+    border-radius: s.space(4);
+    color: s.color(white-light);
+    padding: s.space(4) s.space(8);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

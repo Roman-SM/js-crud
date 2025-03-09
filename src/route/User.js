@@ -55,14 +55,14 @@ class User {
 
 // ================================================================
 
-router.get('/', function (req, res) {
+router.get('/user-create', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   const list =  User.getList()
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('index', {
-    style: 'index',
+  res.render('user-index', {
+    style: 'user-index',
     data: {
       users: {
         list,
