@@ -1,0 +1,13 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-card/style.scss' as purchaseProduct;
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: s.space(9);
+    gap: s.space(15);
+    max-width: min-content;
+}
