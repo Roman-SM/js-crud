@@ -1,0 +1,18 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-card/style.scss' as purchaseCard;
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: s.space(9);
+    gap: s.space(15);
+    width: s.space(250);
+}
+.cart-list__container {
+    display: grid;
+    gap: s.space(5);
+    grid-template-columns: 1fr 4fr 2fr 2fr;
+}

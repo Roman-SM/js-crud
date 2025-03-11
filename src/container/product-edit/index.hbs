@@ -4,31 +4,33 @@
       <h1 class="goods__header">Редагування товару</h1>
       <form class="goods__container" method="POST" action="/product-edit">
         <h2 class="goods__title">Інформація про товар</h2>
+        {{#with data}}
         <div class="goods__content">
           <div class="goods__labels">
             <div class="goods__field">
               <label for="name" class="goods__label">Назва товару:</label>
-              <input type="text" name="name" class="goods__input" value="{{data.product.name}}">
+              <input type="text" name="name" class="goods__input" value="{{product.name}}">
             </div>
             <div class="goods__field">
               <label for="price" class="goods__label">Ціна:</label>
-              <input type="number" name="price" class="goods__input" value="{{data.product.price}}">
+              <input type="number" name="price" class="goods__input" value="{{product.price}}">
             </div>
             <div class="goods__field">
               <label for="id" class="goods__label">ID:</label>
-              <input type="number" name="id" class="goods__input"value="{{data.product.id}}">
+              <input type="number" name="id" class="goods__input"value="{{product.id}}">
             </div>
           </div>
           <div class="goods__field">
             <label for="description" class="goods__label">Короткий опис товару:</label>
-            <input type="text" name="description" class="goods__input-coment" value="{{data.product.description}}">
+            <input type="text" name="description" class="goods__input-coment" value="{{product.description}}">
             <label for="text" class="goods__label-coment">Відображуєтсья в картці товару</label>
           </div>
           <div class="goods__buttons">
             <button class="goods__button-renewal">Зберегти оновлення</button>
-            <a href="product-delete?id={{data.product.id}}" class="goods__button-delete">Видалити товар</a>
+            <a href="product-delete?id={{product.id}}" class="goods__button-delete">Видалити товар</a>
           </div>
         </div>
+        {{/with}}
       </form>
     </div>
   </section>

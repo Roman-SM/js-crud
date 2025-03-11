@@ -1,0 +1,31 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/button/style.scss' as button;
+@use '../../component/field/style.scss' as field;
+@use '../../component/purchase-card/style.scss' as purchaseCard;
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: s.space(9);
+    gap: s.space(5);
+    width: s.space(250);
+}
+.cart-info {
+    &__section {
+        border-radius: s.space(3);
+        box-shadow: 0px 0px 10px 0px s.color('light');
+        padding: s.space(6);
+        width: s.space(250);
+    }
+    &__container {
+        display: grid;
+        gap: s.space(5);
+    }
+    &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: s.space(5);
+    }
+}
