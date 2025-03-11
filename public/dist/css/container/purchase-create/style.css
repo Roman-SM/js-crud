@@ -26,6 +26,7 @@
   background-color: #0D6EFD;
   border-radius: 8px;
   transition: opacity 0.3s ease;
+  width: 100%;
   cursor: pointer;
 }
 .button:hover {
@@ -68,18 +69,18 @@ main {
   display: flex;
   flex-direction: column;
 }
-.cart__description-label {
+.cart__comment-label {
   font-size: 16px;
   font-weight: 300;
   padding-bottom: 12px;
 }
-.cart__description-input {
+.cart__comment-input {
   padding: 8px 16px;
   border: 1px solid #CED4DA;
   border-radius: 8px;
   height: 68px;
 }
-.cart__description-coment {
+.cart__comment-coment {
   font-size: 12px;
   font-weight: 300;
   color: #9e9e9e;

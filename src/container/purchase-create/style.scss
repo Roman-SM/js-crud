@@ -37,18 +37,18 @@ main {
         display: flex;
         flex-direction: column;
     }
-    &__description-label {
+    &__comment-label {
         font-size: s.space(4);
         font-weight: 300;
         padding-bottom: s.space(3);
     }
-    &__description-input {
+    &__comment-input {
         padding: s.space(2) s.space(4);
         border: 1px solid s.color(border);
         border-radius: s.space(2);
         height: s.space(17);
     }
-    &__description-coment {
+    &__comment-coment {
         font-size: s.space(3);
         font-weight: 300;
         color: s.color(dark-light);

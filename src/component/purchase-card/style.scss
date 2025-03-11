@@ -1,0 +1,27 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/divider/style.scss' as divider;
+
+.cart {
+  &__id {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: s.color(cart);
+    font-size: s.space(4);
+    gap: s.space(1);
+    text-decoration: none;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    font-size: s.space(4);
+    gap: s.space(3);
+  }
+  &__item-name {
+    color: s.color(cart);
+  }
+  &__item-text {
+    font-weight: 400;
+  }
+}

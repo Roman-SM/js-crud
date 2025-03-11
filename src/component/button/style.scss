@@ -7,6 +7,7 @@
     background-color: s.color(primary);
     border-radius: s.space(2);
     transition: opacity 0.3s ease;
+    width: 100%;
     cursor: pointer;
     &:hover {
     opacity: 0.7;
