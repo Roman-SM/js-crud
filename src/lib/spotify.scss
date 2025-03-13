@@ -1,0 +1,56 @@
+@use './service.scss' as s;
+
+body {
+  background-color: s.color(dark);
+}
+
+main {
+  display: grid;
+  padding-top: s.space(9);
+  padding-bottom: s.space(8);
+}
+.header {
+  width: s.space(180);
+}
+.title {
+  color: s.color(white-light);
+  font-size: s.space(6);
+  font-weight: 500;
+}
+.title--center {
+  text-align: center;
+}
+.text {
+  color: s.color(white-light);
+  font-size: s.space(4);
+  font-weight: 500;
+}
+.text--gray {
+  color: s.color(text);
+  font-size: s.space(4);
+  font-weight: 500;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(3);
+}
+.button {
+  font-size: s.space(5);
+}
+.button--center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.playlist__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: s.space(5);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(8);
+}

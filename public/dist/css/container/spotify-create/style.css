@@ -1,0 +1,103 @@
+body {
+  background-color: #121212;
+}
+
+main {
+  display: grid;
+  padding-top: 36px;
+  padding-bottom: 32px;
+}
+
+.header {
+  width: 720px;
+}
+
+.title {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.title--center {
+  text-align: center;
+}
+
+.text {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.text--gray {
+  color: #BABABA;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button {
+  font-size: 20px;
+}
+
+.button--center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playlist__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.main {
+  gap: 128px;
+}
+
+.header {
+  text-align: end;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 112px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+  align-items: center;
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  font-size: 68px;
+  color: #CED4DA;
+  border-bottom: 1px solid #CED4DA;
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  background-color: #20D562;
+  border-radius: 40px;
+  padding: 20px 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
