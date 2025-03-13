@@ -6,9 +6,10 @@ $colorMap: (
     primary: #0D6EFD,
     delete: #F51B2A,
     white-light: #FFFFFF,
-    dark: #212529,
+    dark: #121212,
     border: #CED4DA,
     cart: #808080,
+    text: #BABABA,
 );
 
 @function color($key) {

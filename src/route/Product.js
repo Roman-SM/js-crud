@@ -56,7 +56,7 @@ class Product {
 // ================================================================
 
 router.get('/product-create', function (req, res) {
-  const productlist =  Product.getList()
+  const productlist = Product.getList()
   res.render('product-create', {
     style: 'product-create',
     data: {

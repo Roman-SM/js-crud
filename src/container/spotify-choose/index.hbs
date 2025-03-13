@@ -1,0 +1,28 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+<main class="main">
+  <h1 class="title title--center">Створити</h1>
+  <ul class="choose">
+    <a href="/spotify-create" class="choose__item">
+      <img src="/img/choose-1.svg">
+      <li class="content">
+        <strong class="title">Плейліст</strong>
+        <p class="text">Створіть плейліст із піснями чи епізодами</p>
+      </li>
+    </a>
+    <a href="/spotify-create?isMix=true" class="choose__item">
+      <img src="/img/choose-2.svg">
+      <li class="content">
+        <strong class="title">Мікс</strong>
+        <p class="text">Комбінуйте смаки в спільному плейлісті з друзями</p>
+      </li>
+    </a>
+  </ul>
+</main>
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}
